@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text</title>
+    <link rel="stylesheet" href="{% static 'api/css/styles.css' %}"> <!-- Updated path -->
+</head>
+<body>
+    <h1>Speech to Text Converter</h1>
+    <form id="audioForm">
+        <label for="audioInput">Upload Audio:</label>
+        <input type="file" id="audioInput" accept="audio/*">
+        <button type="submit">Convert to Text</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="{% static 'api/js/script.js' %}"></script> <!-- Updated path -->
+</body>
+</html>
